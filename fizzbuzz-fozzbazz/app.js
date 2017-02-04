@@ -19,5 +19,8 @@ angular.module('app', ['ngRoute'])
     are named what $routeProvider and the partials are expecting  */
 
   .factory('counter', function(){})
-  .controller('fizzbuzzCtrl', function(){})
+  .controller('fizzbuzzCtrl', function($scope){
+    $scope.display ='Moh';
+    console.log($scope.display)
+  })
   .controller('fozzbazzCtrl', function(){});
